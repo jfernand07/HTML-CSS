@@ -1,0 +1,57 @@
+.maintitle {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo1 {
+    font-size: 24px;
+    color: #a02525;
+    margin: 20px 0;
+}
+.titulo2 {
+    font-size: 20px;
+    color: #22b162;
+    margin: 15px 0;
+}
+.titulo3 {
+    font-size: 18px;
+    color: #a2a342;
+    margin: 10px 0;
+}
+nav {
+    background-color: #333; /* Color de fondo */
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar el menú */
+}
+.redes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar el menú */
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(245, 238, 238); /* Color del texto */
+    font-size: 18px;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #1a1717; /* Color al pasar el ratón */
+    border-radius: 5px;
+}
