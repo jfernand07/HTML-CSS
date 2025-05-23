@@ -7,21 +7,32 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Jose Fernando Ospina Garcia - Riwi Developer </h1> 
-    <img src="/img/familia.png" alt="Jose Fernando" width="230">
-    <nav class="menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="contacto.html">Contato</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="Skills">Skills</a>
+    <style>
+    body {
+        background-color: rgb(127, 151, 160);
+    }
+</style>
+<header>
+    <h1 class="maintitle" >Jose Fernando Ospina Garcia - Riwi Developer </h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
+</header>
+    <img src="/img/familia.png" alt="Jose Fernando" width="230">
     <section>
         <h2 class="titulo1">Mi Pagina Web</h2>
         <p>En esta pagina podran encontrar toda la informacion acerca de mi, mis proyectos, trabajos, habilidades y todo lo relacionado a mi que me gusta Bienvenidos</p>
     </section>
+    <!--descripcion sobre mi-->
     <h2>Acerca de mi</h2>
     <p>Mi nombre es Jose Fernando Ospina, soy un estudiante de programacion, actualmente estudio en riwi, tengo 26 años </p>
     <p>soy una persona dedicada y con muchas ilusiones y ganas de aprender programacion</p>
+    <!-- habilidades -->
     <h2 class="titulo2">Mis habilidades</h2>
     <ul>
         <li>HTML</li>
@@ -30,12 +41,54 @@
         <li>Huntress</li>
     </ul>
     <section>
-        <h2>Proyectos</h2>
+        <!-- Proyectos -->
+        <h2 class="titulo3">Proyectos</h2>
         <h3>Portafolio #1</h3>
         <p>Este es mi primer proyecto en Html </p>
-        <img src="" alt="">
+        <img src="/img/proyecto.png" alt="Proyecto" width="230">
+        <p>este es un proyecto personal el cual inicie hace poco para crear una pagina web de un local de comida rapida, aun esta en proceso</p>
     </section>
-    <table></table>
+    <table>
+        <tr>
+            <th>Nombre del proyecto</th>
+            <th>Tecnologia usada</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Valhalla fries</td>
+            <td>HTML</td>
+            <td>Por definir</td>
+        </tr>
+    </table>
+    <h2>Formulario</h2>
+<div class="container">
+        <h2>Contacto</h2>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <br>
+            <label for="email">correo electronico</label>
+            <input type="email" name="correo" placeholder="Correo Electrónico" required>
+            <br>
+            <label for="mensaje">mensaje</label>
+            <br>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+</div>
+<h2>Redes sociales</h2>
+<ul class="redes">
+    <li><a href="https://web.facebook.com/josefernando.ospinagarcia/" target="_blank">facebook </a></li>
+    <li><a href="https://www.instagram.com/josefernando_ospina/" target="_blank">Instagram</a></li>
+    <li><a href="https://www.linkedin.com/in/jose-fernando-ospina-garcia-0b1b4a1b5/" target="_blank">Linkedin</a></li>
+    <li><a href="https://github.com/jfernand07" target="_blank">GitHub</a></li>
+</ul>
+    <footer>
+        <p>Derechos reservados &copy; 2023</p>
+        <p>Jose Fernando Ospina Garcia</p>
+        <p>Riwi Developer</p>
+    </footer>
 
 </body>
 </html>
