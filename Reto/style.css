@@ -3,26 +3,15 @@
     padding: 0;
 
 }
-#menu-conteiner{
-width: 100%;
-height: 50px;
-display: flex;
-background-color: #89119d;
-justify-content: center;
-align-items: center;
-}
 
-.menu{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    font-size: 20px;
+body {
+    background-color: rgb(156, 39, 176);
     font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-weight: bold;
+    font-weight: 10;
 }
 
 header{
+    background-color: #c34ed8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,16 +25,48 @@ header img{
     height: auto;
 }
 
+#menu-conteiner{
+width: 100%;
+height: 50px;
+display: flex;
+list-style: none;
+background-color: #89119d;
+justify-content: center;
+align-items: center;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
+
+
 h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
     color: gold;
 }
 
-body {
-    background-color: rgb(156, 39, 176);
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 10;
+main{
+    padding: 20px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 150px;
+    grid-gap: 20px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .card {
@@ -74,15 +95,94 @@ p {
     color: gold;
 }
 
-.gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 200px;
-    grid-gap: 20px;
-}
 
 .grafico1{
+    flex-wrap: wrap;
     grid-column: 1/3;
     width: 100%;
     height: 550px;
 }
+
+.grafico2{
+    flex-wrap: wrap;
+    grid-column: 2/4;
+    width: 100%;
+    height: 550px;
+}
+
+footer {
+    background-color: #c34ed8;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+@media(max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    
+    header {
+        height: 150px;
+    }
+    
+    header img {
+        width: 80px;
+    }
+    
+    #menu-conteiner {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .menu {
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+}
+@media(max-width: 480px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        height: 120px;
+    }
+    
+    header img {
+        width: 60px;
+    }
+    
+    .menu {
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    footer h2 {
+        font-size: 1rem;
+    }
+    
+}
+
